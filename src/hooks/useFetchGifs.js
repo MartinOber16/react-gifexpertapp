@@ -14,15 +14,15 @@ export const useFetchGifs = ( category ) => {
             //.then( imgs => setImages( imgs ) );
             .then( imgs => {
 
-                setTimeout( () => {
+                //setTimeout( () => {
 
-                    console.log(imgs)
+                   //console.log(imgs)
                     setstate({
                         data: imgs,
                         loading: false
                     });
 
-                }, 2000 );
+                //}, 2000 );
 
             } );
     }, [ category ]);
