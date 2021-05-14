@@ -11,8 +11,8 @@ export const GifGrid = ( { category }) => {
 
     //const [images, setImages] = useState([]);
     const { data: images, loading } = useFetchGifs( category ); // custom hook
-
-    // Ejecuta solo cuando el componente es renderizado por primera vez
+    
+    // Ejecuta solo cuando el componente es renderizado por primera vez si esta vacio el array del segundo parametro.
     // useEffect( () => {
     //     getGifs( category )
     //         //.then( imgs => setImages( imgs ) );
