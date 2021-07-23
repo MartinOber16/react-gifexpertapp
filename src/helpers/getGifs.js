@@ -2,7 +2,7 @@
 export const getGifs = async ( category ) => {
 
     const apiURL = 'api.giphy.com/v1/gifs/search';
-    const apiKey = '';
+    const apiKey = process.env.REACT_APP_GIPHY_APIKEY;
     const apiLimit = 10;
     const apiQuery = encodeURI( category );
 
